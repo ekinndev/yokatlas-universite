@@ -4,7 +4,7 @@
 
 **
 ![NodeJs Puppeteer](https://i.ibb.co/5h61R7P/logo.png)
-![enter image description here](https://i.ibb.co/L6TrMf8/veri.png)
+![enter image description here](https://i.ibb.co/bK6CGVG/bot.png)
 
 **
 
@@ -29,8 +29,22 @@ Bu durumda Ege Üniversitesi'nin unikodu 1034 oluyor.
 **
 
     {
-    unikodu:Array,
-    unikodu:Array,
-    unikodu:Array,
+    unikodu:{
+	sehir:String,
+	uniAd:String,
+	uniTur:String
+	söz:Array(),
+	say:Array(),
+	ea:Array()
     }
 
+## Versiyon 1.0.1 Güncellemesi
+Üsteki resimde görüldüğü üzere bölümler puan türüne göre gruplandı.
+İsimlendirmede Camel Case kullanıldı.
+Küçük Bug Fixler.
+Tarayıcı gizlendi.
+Script'in hangi  aşamada olduğuna dair küçük çıktılar eklendi.
+
+## Bilinen Hatalar
+Eğer çekilen veride bir tutarsızlık(aynı bölümün 2-3 kere array'e eklenmesi) gibi durumlar söz konusu olursa.
+5. satırda bulunan slowMo:  150 değerini daha yüksek bir değer giriniz fakat bu durumda da bölümleri daha yavaş çekecektir.
