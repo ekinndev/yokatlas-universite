@@ -3,7 +3,7 @@ const fs = require('fs');
 
 const tablolariCek = async (url, sayfaSayisi) => {
   try {
-    const browser = await puppeteer.launch({ slowMo: 150 });
+    const browser = await puppeteer.launch({ slowMo: 200 });
     let page = await browser.newPage();
     await page.goto(url);
     await page.waitForSelector('#mydata_next');
