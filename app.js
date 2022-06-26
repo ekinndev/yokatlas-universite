@@ -37,11 +37,11 @@ const tablolariCek = async (url, sayfaSayisi) => {
               }
             }
             for (let index = 0; index < fontVeriler.length; index++) {
-              if (index == 1) {
+              if (index == 2) {
                 uni.bolumAdi += ' ' + fontVeriler[index].innerText.trim();
-              } else if (index == 10) {
+              } else if (index == 11) {
                 uni.siralama = fontVeriler[index].innerText.trim();
-              } else if (index == 14) {
+              } else if (index == 15) {
                 uni.puan = fontVeriler[index].innerText.trim();
               }
             }
